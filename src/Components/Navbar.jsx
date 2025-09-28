@@ -13,7 +13,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const links = navLinks.map((route) => (
-    <li className="lg:mr-10 sm:bg-yellow-100 md:bg-white px-3 sm:hover:bg-yellow-200 md:hover:bg-white">
+    <li key={route.id} className="lg:mr-10 sm:bg-yellow-100 md:bg-white px-3 sm:hover:bg-yellow-200 md:hover:bg-white">
       <a href={route.path}>{route.name}</a>
     </li>
   ));
